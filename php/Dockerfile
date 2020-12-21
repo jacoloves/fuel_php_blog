@@ -15,7 +15,7 @@ RUN curl -sS https://getcomposer.org/installer | php && \
     mv composer.phar /usr/local/bin/composer && \
     chmod 777 /usr/local/bin/composer
 
-RUN cd /var/www/html && \
+RUN cd /var/www && \
     curl https:://get.fuelphp.com/oil | sh
 
-WORKDIR /var/www/html
+WORKDIR /var/www/

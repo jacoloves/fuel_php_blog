@@ -17,7 +17,7 @@ services:
             dockerfile: Dockerfile
         volumes:
           -  ./php.ini:/usr/local/etc/php/php.ini
-          -  ./html:/var/www/html
+          -  ./html:/var/www/
     mysql:
         image: mysql:5.7
         environment:
